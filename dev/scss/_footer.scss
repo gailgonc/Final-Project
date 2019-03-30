@@ -1,0 +1,115 @@
+// Footer Styles
+footer {
+    max-width: 100%;
+    margin:0 auto;
+    padding:0;
+      
+    a{
+        color:white;
+        text-decoration: none;
+        line-height: 1.25em;
+        padding-left: 20px;
+        font-size: 0.875rem;
+        text-align: center;
+        
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+    p {
+        @include flatten;
+        padding-left: 20px;
+        padding-right: 50px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        color:white;
+        line-height: 1.25em;
+        font-size: 0.875rem;
+    }
+    h2{
+        font-size: 1.25em;
+        line-height: 2.65 rem;
+        white-space: nowrap;
+        background-color: blue;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin:0;
+        
+
+    }
+    .copyright{
+        background-color: black;
+        color:white;
+        text-align: center;
+        height: 45px;
+        padding-top: 15px;
+    }
+    
+    .flex-row-container {
+        
+        background-color: grey;
+        display: flex;
+        justify-content: space-around;
+        
+        
+    }
+    
+    .flex-first{
+        flex: 3;
+    }
+    .flex-second, .flex-third{
+       
+        flex: 2;
+    }
+      
+    
+    @media (max-width: 1060px) {
+        .flex-row-container{
+            background-color: yellow;
+            flex-wrap:wrap;
+            
+        }
+        .second-column {
+            width: 50%;
+            order: 3;
+          }
+        
+          .first-column{
+            width: 100%;
+          }
+          .third-column{
+            width:50%;
+            order:2;
+        
+          }
+                        
+        a, p{
+            color:black;
+
+        }
+        
+        
+        
+    }
+    @media (max-width: 764px) {
+        .flex-row-container{
+            
+            background-color: red;
+        }
+        .second-column {
+            width: 100%;
+           
+          }
+        
+          .first-column{
+            width: 100%;
+          }
+          .third-column{
+            width:100%;
+           
+        
+          }
+        
+        
+    }
+}

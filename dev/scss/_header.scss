@@ -1,0 +1,68 @@
+// Header styles
+header {
+    background-color: $brand-color;
+    @include flex-layout-row;
+    
+    h1 {
+        @include flatten;
+        color: $text-color-light;
+        font-size: 1.5em;
+        padding-left: 20px;
+        
+    }
+    h2{
+        @include flatten;
+        color: $text-color-light;
+        font-size: 1.2em;
+        padding-left: 20px;
+    }
+    .title{
+        font-size: .9em;
+        padding-left: 20px;
+    }
+    img{
+        padding-top: 15px;
+        padding-left: 15px;
+    }
+    .short-title{
+        display:none;
+    }
+    .title-text{
+        padding-top: 20px;
+    }
+    @media (max-width: 940px) {
+        .title{
+            display:none;
+        }
+        h1{
+            padding-top: 30px;
+            font-size: 1.2em;
+            padding-right: 20px;
+        }
+        h2{
+            font-size: 1em;
+            padding-right: 20px;
+        }
+    }
+    @media (max-width: 555px) {
+        .short-title{
+            display:block;
+            font-size: 1.7em;
+            padding-top: 50px;
+            padding-left: 50px;
+            padding-right: 40px;
+
+            
+        }
+        img{
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-bottom: 10px;
+        }
+        .title-text{
+            display:none;
+        }
+        
+        
+    }
+}
