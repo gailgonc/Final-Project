@@ -1,105 +1,60 @@
-// Data Table styles 
-.dt {
-    // Data Table Heading Colours
-    $table-caption-color: #dadada;
-    $table-headings-color: darken($table-caption-color, 20);
+.students-table{
+    
+    border: 1px solid black;
+    margin-left:auto; 
+    margin-right:auto;
+    width: 80%;
 
-    // Data Table Column Colours
-    $colour1: rgba(1, 41, 95, 1);
-    $colour2: rgba(67, 127, 151, 1);
-    $colour3: rgba(132, 147, 36, 1);
-    $colour4: rgba(255, 179, 15, 1);
-    $colour5: rgba(253, 21, 27, 1);
-
-    // Data Table Column Colour List
-    $table-colours-list: $colour1, $colour2, $colour3, $colour4, $colour5;
-
-    // Table Border
-    $table-border: 1px solid black;
-
-    // Table Cell padding
-    $cell-padding: 10px;
-
-    // Table Styles
-    font-family: $heading-font;
-    width: $one-col;
-    border: $table-border;
-
+    font-family: Arial, Helvetica, sans-serif;
+    
+    margin-bottom: 30px;
+    
     th, td {
         text-align: center;
-        padding: $cell-padding;
-        border: $table-border;
+        padding: 5px;
+        border: 1px solid black;
+       
     }
-
-    caption {
-        background-color: $table-caption-color;
-        padding: $cell-padding;
-        font-size: 1.2em;
-        border-right: $table-border;
-        border-left: $table-border;
-        border-top: $table-border;
-    }
-
-    thead tr,
-    tfoot tr {
-        background-color: $table-headings-color;
-    }
-
-    tbody {
-
-        tr {
-            @for $i from 1 through length($table-colours-list){
-                td:nth-child(#{$i}){
-                    background-color: nth($table-colours-list, $i);
-                    color: contrast-text-color(nth($table-colours-list, $i));
-                    &:hover {
-                        $bgc: rgba(nth($table-colours-list, $i), 0.6); 
-                        background-color: $bgc;
-                        color: contrast-text-color($bgc);
-                    }
-                }
-            }
+    tbody tr {
+        &:nth-child(even){
+            background-color: rgb(192, 182, 182);
+            color:white;
         }
-
+        &:nth-child(odd){
+            background-color: rgb(209, 199, 199);
+        }
     }
 
-    @media (max-width: $phoneLandscape) {
-        th, td {
-            text-align: left;
-        }
+    thead tr
+    {
+        background-color: blue;
+        color:white;
+    }
+
+    @media (max-width: 581px) {
         
-        tbody {
-            tr {
-                &:nth-child(even){
-                    background-color: lightblue;
-                }
-                &:nth-child(odd){
-                    background-color: pink;
-                }
+        padding:0;
+        margin-left:0;
+        margin-right:0;
+        thead{
+            
+            th{
+                font-size: .7em;
             }
-            td {
-                display: block;
-                &:before {
-                    content: attr(data-th) ": ";
-                    display: inline-block;
-                    margin-right: 10px;
-                    font-weight: bold;
-                }
-                @at-root .dt tbody tr td:nth-child(1n){
-                    background-color: transparent;
-                    color: black;
-                    &:hover {
-                        background-color: rgba(white, 0.5);
-                        color: black;
-                    }
-                }
-            }    
         }
-
-        th {
-            display: none;
+        td, tr{
+            padding: 5px;
+        }
+        td{
+            text-align:left;
+        }
+        p{
+            font-size: .7em;
         }
           
     }
-
+    
+}
+.student-header{
+    text-align:center;
 }

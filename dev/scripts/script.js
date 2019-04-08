@@ -1,9 +1,16 @@
 // Responsive Menu - Dropdown
-const body = document.body;
-const hamburger = document.getElementById('hamburger');
+window.onload=function(){
 
-hamburger.addEventListener('click', openMenu);
+    const body = document.body;
+    
+    const sticker = document.querySelector('.rotating-sticker');
+    const hamburger = document.getElementById('hamburger');
+        
+    hamburger.addEventListener('click', openMenu);
 
-function openMenu(){
-    body.classList.toggle('show');
+    function openMenu(){
+        body.classList.toggle('show');
+    }
+    
+
 }

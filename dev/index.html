@@ -23,7 +23,7 @@
 <!-- Put your HTML code here... -->
 <div class="wrapper">
     <header>
-        <a href=".index.html">
+        <a href="./index.html">
             <img src="./images/bcit-logo.png" alt="Bcit Logo">
         </a>
         <div class="title-text">
@@ -65,8 +65,23 @@
         </ul>
     </nav>
     <main>
-        <section>
+        
+        <div class="banner-wrapper">
+            <img src="images/banner-large.jpg" 
+                 alt="Information Technology Globe"
+                 srcset="images/banner-retina.jpg 2400w,
+                         images/banner-large.jpg 1200w,
+                         images/banner-medium.jpg 825w,
+                         images/banner-small.jpg 405w"
+                 sizes="(max-width: 1024px) 100vw, 1024px">
+        </div>  
+        <div class="banner-child">
             <h2>Code anything from scratch for any sector. Be an indemand software programmer</h2>
+        </div>
+        
+        <div class="wrapper-body">
+        <section>
+            
             <h3>Become a Web Developer with the SSD Program Today</h3>
             <p>The Software Systems Developer (SSD) program (Web Programmer option) is an eight month, full-time 
                 business application development program offered by BCIT's School of Computing and Academic Studies, 
@@ -82,7 +97,7 @@
         <h4>
                 <a href="./programoverview.html">Learn More About SSD </a>
         </h4>
-       
+    </div>
     </main>
     <footer>
         <div class="flex-row-container">

@@ -1,9 +1,12 @@
 // Main Styles
 main {
-    padding: $padding;    
-
-    section:not(:first-child) {
-        margin-top: $padding;
+    h3{
+        color:$brand-color;
+        padding-top:0;
+        margin-top:0;
+    }
+    .student-table{
+        
     }
     
 }

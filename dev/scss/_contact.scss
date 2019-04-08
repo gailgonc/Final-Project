@@ -1,0 +1,38 @@
+.contact-form{
+    background-color: pink;
+}
+
+.row-label{
+    
+
+}
+.row-line{
+    background-color: blue;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;           
+    padding-top: 1px;
+    padding-left: 1px;
+    box-shadow: inset 0 0 0 1px #8c8c8c;
+}
+.row-label{
+    
+                   
+}
+.row-input{
+    
+                   
+}
+.radio{
+    background-color: purple;
+
+}
+.select-radio{
+    background-color: yellow;
+    color:black;
+
+}
+.submit-button{
+    background-color: green;
+    color:white;
+}

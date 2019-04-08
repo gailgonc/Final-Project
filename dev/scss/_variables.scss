@@ -1,7 +1,7 @@
 // Colors
-$brand-color: #8540c5;
-$body-bg-color: #303030;
-$wrapper-bg-color: white;
+$brand-color: #003c71;
+$body-bg-color: #5e5b5b;
+$wrapper-bg-color: #E7E7E7; //change it
 // Text Colors
 $text-color-dark: black;
 $text-color-light: white;
@@ -46,6 +46,8 @@ $six-col: colWidth(6);
 $desktopMedium: em(1250);
 $tabletLandscape: em(1024);
 $tabletPortrait: em(850);
+$calendarSmall: em(661);
+
 $phoneLandscape: em(940);
 $phonePortrait: em(420);
 

@@ -5,7 +5,7 @@ footer {
     padding:0;
       
     a{
-        color:white;
+       
         text-decoration: none;
         line-height: 1.25em;
         padding-left: 20px;
@@ -22,7 +22,7 @@ footer {
         padding-right: 50px;
         padding-top: 15px;
         padding-bottom: 15px;
-        color:white;
+       
         line-height: 1.25em;
         font-size: 0.875rem;
     }
@@ -47,11 +47,20 @@ footer {
     
     .flex-row-container {
         
-        background-color: grey;
+        background-color: #968a8a;
+        
         display: flex;
         justify-content: space-around;
         
         
+        
+    }
+    .flex-row-container p{
+        color:white;
+        
+    }
+    .flex-row-container a{
+        color:white;
     }
     
     .flex-first{
@@ -65,7 +74,7 @@ footer {
     
     @media (max-width: 1060px) {
         .flex-row-container{
-            background-color: yellow;
+           
             flex-wrap:wrap;
             
         }
@@ -85,17 +94,16 @@ footer {
                         
         a, p{
             color:black;
+           
 
         }
         
         
         
+        
+        
     }
     @media (max-width: 764px) {
-        .flex-row-container{
-            
-            background-color: red;
-        }
         .second-column {
             width: 100%;
            

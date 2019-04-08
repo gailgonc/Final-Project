@@ -3,4 +3,30 @@
     max-width: 85%;
     @include margin-center;
     background-color: $wrapper-bg-color;
+    
+}
+.wrapper-body{
+    padding: $padding;
+}
+.banner-wrapper{
+    position: relative;
+    display: inline-block;
+}
+.banner-child{
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 115%; 
+    text-align: center;
+    width: 60%; 
+
+}
+.banner-child h2{
+    
+        color:white;
+    
+}
+.banner-wrapper img{
+    display:block;
 }

@@ -1,42 +1,36 @@
 // Info Section styles
-.info {
-    
-    @include first-last-el-no-margin;
 
-    .some-row {
-        @include flex-layout-row;
-        
-        .a-01,
-        .a-02 {
-            @extend %row-item;
-        }
+section
+{
+    
+    .header-option
+    {
+        width:100%;
+        color:white;
+        background-color:$brand-color;
+        padding:10px;
+    }
+    // Data Table styles 
+    .table
+    {
+        margin-left: 20px;
+        padding-left: 20px;
+    }
+    .table td 
+    {
+        text-align: center;
+        padding: 20px;
+        border: 2px solid grey;
+    }
+    .table .highlight
+    {
+        color: $brand-color-light;
     
     }
+    h1,h2,h3,h4,a,p {
+        padding-left: 20px;
+        padding-top: 10px;
 
-}
-
-// More Stuff section
-// Just practice @extend
-.more-stuff {
-    
-    background-color: rgba(pink, 0.3);
-    padding: $padding;
-    @include first-last-el-no-margin;
-    
-    .different-row {
-        @include flex-layout-row;
     }
-
-    .a-03,
-    .a-04,
-    .a-05,
-    .a-06 {
-        @extend %row-item;
-        margin-bottom: 2%;
-        background-color: lightyellow;
-        @media (max-width: $phoneLandscape){
-            margin-bottom: 8%;
-        }
-    }
-
+    
 }

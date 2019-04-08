@@ -1,6 +1,7 @@
 // Header styles
 header {
     background-color: $brand-color;
+    height: 130px;
     @include flex-layout-row;
     
     h1 {
@@ -15,6 +16,11 @@ header {
         color: $text-color-light;
         font-size: 1.2em;
         padding-left: 20px;
+    }
+    h3{
+        padding-top:0;
+        margin:0;
+        color:blue;
     }
     .title{
         font-size: .9em;
