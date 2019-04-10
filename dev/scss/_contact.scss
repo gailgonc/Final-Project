@@ -16,6 +16,7 @@
         display: flex;
         width: 85%;
         margin: 0 auto;
+        flex-wrap: wrap;
     }
     .column-contact{
         border: 1px solid black;
@@ -123,6 +124,18 @@
         margin-bottom: 10px;
         
     }
+    @media (max-width: $tabletLandscape) 
+    {
+        .column-contact{
+           
+            width: 100%;
+            margin-bottom: 10px;
+           
+    
+        }
+
+    }
+    
       
 }
 
