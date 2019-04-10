@@ -17,10 +17,15 @@
     margin: 0 auto;
     left: 0;
     right: 0;
-    top: 200px; 
+    top: 400px; 
     text-align: center;
     width: 60%; 
+    
 
+}
+.banner-child .banner-child-location{
+   
+    display: none;
 }
 .banner-child h2{
     
@@ -151,5 +156,11 @@ line-height: .9em;
      padding-top: 1px;
      padding-bottom: 1px;
     }
-
+    .banner-child{
+        
+        top: 150px; 
+        font-size: .9em;
+    
+    }
+    
 }

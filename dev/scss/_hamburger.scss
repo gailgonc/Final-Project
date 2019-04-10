@@ -14,6 +14,12 @@
         .hamburger-content {
             height: 24px;
         }
+        .banner-child{
+        
+            top: 550px; 
+            font-size: .9em;
+        
+        }
 
         .text {
             @include visually-hidden;
