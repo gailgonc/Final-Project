@@ -27,10 +27,39 @@ section
         color: $brand-color-light;
     
     }
-    h1,h2,h3,h4,a,p {
-        padding-left: 20px;
-        padding-top: 10px;
+    a{
+        padding-top: 20px;
+        padding-bottom: 20px;
 
     }
+    h1,h2,h3,h4,h5,p,nav {
+        font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+        padding-left: 20px;
+        padding-top: 10px;
+        padding-right: 30px;
+    }
+    p{
+        font-size: 1.2em;
+    }
+    .link-padding{
+        padding-left: 20px;
+    }
+    .courses h2{
+        text-align:center;
+        text-transform: uppercase;
+    }
+    .courses h3{
+        background-color: $brand-color;
+        color:white;
+        padding-bottom: 3px;
+    }
+    .courses h4{
+        color: $brand-color;
+        font-size: 1.3em;
+        
+    }
     
+        
 }
+
+

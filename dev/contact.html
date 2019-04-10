@@ -8,7 +8,8 @@
 	
 	<!-- *** IMPORTANT *** PUT LINKS TO GOOGLE FONTS HERE. DO NOT PUT THEM INSIDE THE build:css comments -->
 	<!-- Put Google Fonts Here -->
-	<link href="https://fonts.googleapis.com/css?family=Alegreya:400,400i,700,700i|Trochut:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya:400,400i,700,700i|Trochut:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i|Roboto:400,400i,700,700i" rel="stylesheet">
 	<!-- end Google Fonts -->
 	<!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT THREE LINES OF CODE - THEY ARE IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THESE LINES -->
   <!-- build:css styles/styles.min.css -->
@@ -65,6 +66,7 @@
         </ul>
     </nav>
     <main>
+        <div class="contact-wrapper">
         <h2>CONTACT US</h2>
         <section>
             <h3>Helpful Links</h3>
@@ -83,7 +85,7 @@
             <h3>Contact Information</h3>
             <div class="row-contact">
                 <div class="column-contact">
-                    <p class="bold">For admission and program inquiries:</p><br /><br /><br />
+                    <p class="bold">For admission and program inquiries:</p><br />
                     <ul>
                         <li><span class="bold">Phone:</span>604.412.7788
                         </li>
@@ -94,7 +96,7 @@
                     </ul>
                 </div>
                 <div class="column-contact">
-                    <p class="bold">Mailing address:</p><br /><br /><br />
+                    <p class="bold">Mailing address:</p><br />
                     <ul>
                         <li>HTP Programs - BCIT Downtown <br />
                             Campus <br />
@@ -105,12 +107,11 @@
                     </ul>
                 </div>
             </div>
-            <div class="center">
+            <div class="directions-link">
                 <a href="https://www.bcit.ca/about/downtown.shtml">Campus info, map, and directions</a>
             </div>
-
         </section>
-        <section>
+        <div class="form-wrapper">
             <h3>Contact Form</h3>
             <form onsubmit = "alert('We will get back to you within 24 hours');" method="post" class="contact-form">
                 <div class = "row-line">
@@ -149,42 +150,40 @@
                     <div class = "select-radio">
                         <label>
                             <input type="radio" name="person-type" value="CurrentStudent">
-                            "Current Student"   
+                            Current Student   
                         </label>
                         <br />
                         <label>
                             <input type="radio" name="person-type" value="ProspectiveStudent">
-                            "Prospective Student"   
+                            Prospective Student   
                         </label>
                         <br />
                         <label>
                             <input type="radio" name="person-type" value="Instructor">
-                            "Instructor"   
+                            Instructor   
                         </label>
                         <br />
                     </div>
                 </div>
                 <div class = "row-line">
-                    <div>
+                    <div class="comments-text">
                         <label for="comments">Questions / comments</label>
                     </div>    
-                    <div>
+                    <div class="comments-input"> 
                         <textarea name="questions" id="questions" rows="6" cols="25" required>
 
                         </textarea>
                     </div>
                 </div>
-                <div class = "row-line">
-                    <div class="submit-button">
-                        <input id="submit" type="submit" value="Submit">
-                    </div>    
-                </div>
+                <div class="submit-button">
+                    <input id="submit" type="submit" value="Submit">
+                </div>    
+                
 
             </form>
             
-        </section>
-        
-       
+        </div>
+    
     </main>
     <footer>
         <div class="flex-row-container">

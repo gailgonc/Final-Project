@@ -30,3 +30,126 @@
 .banner-wrapper img{
     display:block;
 }
+.staff-wrapper{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    
+}
+.staff-area{
+    width: 40%;
+    border: 1px solid grey;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: grey;
+    color:white;
+
+}
+.instructor{
+    background-color:$brand-color-light;
+    color:white;
+    
+}
+.staff h2{
+    text-align:center;
+    text-transform:uppercase;
+}
+.staff h3{
+background-color: $brand-color-light;
+text-transform:uppercase;
+color:white;
+padding: 10px;
+margin: 20px;
+
+}
+.staff h4{
+    background-color: $brand-color-dark;
+    padding: 10px;
+    margin: 0;
+    
+    }
+.staff p{
+line-height: .9em;
+    padding-left: 20px;
+}
+
+.students-wrapper{
+    width: 95%;
+    margin: 0 auto;
+    
+
+}
+.students-wrapper h2{
+    padding-top: 20px;
+    text-transform:uppercase;
+    text-align: center;
+    
+}
+.students-heading{
+    margin:0;
+    display: flex;
+    justify-content: space-between;
+    background-color: $brand-color-light;
+}
+.label{
+    width: 33%;
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color:white;  
+}
+
+.student-row{
+    margin:0;
+    display:flex;
+    justify-content: space-between;
+        
+}
+.student-column{
+    width: 33%;
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.student-row:nth-child(2n+1){
+    background-color: rgb(212, 209, 209);
+    color: black;
+}
+@media (max-width: 750px) {
+    .staff-wrapper{
+        display:block;
+    }
+    .staff-area{
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    .students-heading{
+        display:none;
+    }
+    .student-row{
+        display:block;
+        
+    }
+    .student-column{
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    .students-wrapper h2{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-transform:uppercase;
+        text-align: center;
+        background-color:$brand-color-light;
+        color:white;
+        
+    }
+    .student-row:nth-child(2n+1){
+     padding-top: 1px;
+     padding-bottom: 1px;
+    }
+
+}

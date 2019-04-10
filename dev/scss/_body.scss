@@ -5,18 +5,17 @@ body {
     margin:0;
     padding:0;
 }
-html {
+html 
+{
     box-sizing: border-box;
-  }
-  *, *:before, *:after {
+}
+*, *:before, *:after {
     box-sizing: inherit;
-  }
+}
   
   /* Images  - Max-Width Reset */
-  img {
-      max-width: 100%;
-      height: auto;
-  }
-  h1, h2, h3, h4, h5, nav a {
-    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+img {
+    max-width: 100%;
+    height: auto;
 }
+

@@ -1,23 +1,36 @@
 .students-table{
     
     border: 1px solid black;
-    margin-left:auto; 
-    margin-right:auto;
-    width: 80%;
-
+    //width: 80%;
     font-family: Arial, Helvetica, sans-serif;
+        
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: space-between;
+        
     
-    margin-bottom: 30px;
+    tr{
+        width: 30%;
+        border: 1px solid grey;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background-color: grey;
+        color:white;
     
-    th, td {
-        text-align: center;
-        padding: 5px;
-        border: 1px solid black;
-       
     }
+    //margin-bottom: 30px;
+    
+    //th, td {
+   //     text-align: center;
+    //    padding: 5px;
+    //    border: 1px solid black;
+       
+    //}
     tbody tr {
         &:nth-child(even){
-            background-color: rgb(192, 182, 182);
+            background-color: rgb(151, 145, 145);
             color:white;
         }
         &:nth-child(odd){
@@ -27,32 +40,20 @@
 
     thead tr
     {
-        background-color: blue;
+        background-color: $brand-color;
         color:white;
     }
 
     @media (max-width: 581px) {
         
-        padding:0;
-        margin-left:0;
-        margin-right:0;
-        thead{
-            
-            th{
-                font-size: .7em;
-            }
+       
+            display:block;
+       
+        tr{
+            width: 80%;
+            margin: 0 auto;
+            margin-bottom: 10px;
         }
-        td, tr{
-            padding: 5px;
-        }
-        td{
-            text-align:left;
-        }
-        p{
-            font-size: .7em;
-        }
-          
-    }
     
 }
 .student-header{

@@ -1,38 +1,128 @@
-.contact-form{
-    background-color: pink;
-}
+.contact-wrapper{
+    background-color: rgb(250, 243, 243);
+    h2, h3, p, label,input[type="submit"] {
+        font-family: 'Roboto', sans-serif;
+    }
 
-.row-label{
+
+    h2{
+        padding-top: 20px;
+        text-align: center;
+    }
+    h3{
+        font-size: 1.5em;
+    }
+    .row-contact{
+        display: flex;
+        width: 85%;
+        margin: 0 auto;
+    }
+    .column-contact{
+        border: 1px solid black;
+        width: 48%;
+        margin-right: 10px;
+
+    }
+
+    section{
+        background-color:rgb(245, 233, 233);
+        width: 95%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    section ul{
+        padding-bottom: 10px;
+        
+    }
+    .directions-link{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    .form-wrapper{
+       
+        width: 95%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .form-wrapper h3{ 
+        padding-left: 20px;
+    }
     
+    .row-line{
+        display:flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .row-label{
+        padding-top: 20px;
+       
+        width: 25%;
+    }
+    .row-input{
+        padding-top: 10px;
+        
+        width: 74%;
+        height: 50px;
+    }
+    label{
+        padding-left: 20px;
+        padding-top: 20px;
+        font-size: 1.1em;
+    }
+    input{
+        color: #fff;
+        width: 100%;
+        border: 2px solid grey;
+        padding: 8px 16px;
+        font-size: 1.1em;
+        //border-radius: 6px;
+        cursor: pointer;
+        
+    }
+    textarea{
+        color: #fff;
+        width: 100%;
+        border: 2px solid grey;
+        padding: 8px 16px;
+        font-size: 1.1em;
+        //border-radius: 6px;
+        cursor: pointer;
+        
+    }
+    .comments-text{
+        padding-top: 20px;
+       
+        width: 25%;
+    }
+    .comments-input{
+        padding-top: 10px;
+        width: 100%;
+        padding-bottom: 50px;
+        
 
-}
-.row-line{
-    background-color: blue;
-    display:flex;
-    flex-direction: row;
-    justify-content: flex-start;           
-    padding-top: 1px;
-    padding-left: 1px;
-    box-shadow: inset 0 0 0 1px #8c8c8c;
-}
-.row-label{
-    
-                   
-}
-.row-input{
-    
-                   
-}
-.radio{
-    background-color: purple;
+    }
+    .select-radio{
+       
+        display:flex;
+        width: 85%;
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        color: $brand-color-light;
+        justify-content: space-between;
 
+    }
+    .submit-button{
+        text-align:right;
+    }
+    input[type="submit"]{
+        background-color: green;
+        color:white;
+        width: 200px;
+        margin-bottom: 10px;
+        
+    }
+      
 }
-.select-radio{
-    background-color: yellow;
-    color:black;
 
-}
-.submit-button{
-    background-color: green;
-    color:white;
-}
